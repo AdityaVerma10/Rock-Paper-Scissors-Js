@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+header{
+    background-color: rgb(16, 10, 10);
+    color: white;
+    height: 4.3rem;
+    text-align: center;
+}
+header h1{
+    padding: 0.7rem;
+}
+#maincontainer{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    margin-top: 1.5rem;
+}
+
+.rock,.paper,.scissor{
+    border: none;
+    background-color: white;
+    rotate: 20;
+    width: 100px;
+    height: 100px;
+}
+.scissor{
+    rotate: 6deg;
+}
+.rock img,.paper img,.scissor img{
+
+    width: 100px;
+    height: 100px;
+}
+.mainbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.winlosedrawbox{
+    display: flex;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+.footerbox{
+    border: 1px solid black;
+    margin-top: 5rem;
+    width: 18rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: gray;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: 600;
+    /* color: blueviolet; */
+}
+.lastbox{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top:8rem;
+    bottom: 0;
+    margin: auto;
+    height: 70vh;
+    width: 80vw;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+  
+}
+.lastbox1{
+    display: none;
+}
+#lastboxtext{
+    margin-bottom:3rem ;
+    font-size: 2rem;
+}
+#continuebutton{
+    margin-bottom: 2rem;
+}
+#player1{
+    width: 350px;
+    height: 260px;
+}
+#player2{
+    width: 410px;
+    height: 280px;
+}
+#continuebutton{
+    font-size: 1.286rem;
+    width: 130px;
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-color: rgb(155, 125, 182);
+    /* color:; */
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+#continuebutton:hover{
+    background-color:rgb(109, 100, 118);
+}
+
+#winbox{
+    color: green;
+    font-weight: bold;
+}
+#losebox{
+    color: red;
+    font-weight: bold;
+
+}
+#drawbox{
+    color: blueviolet;
+    font-weight: bold;
+
+}
